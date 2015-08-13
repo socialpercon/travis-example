@@ -8,6 +8,7 @@ addons:
 
 before_install:
     - sudo apt-get install -qq tree
+    - sudo apt-get install python-nose
 
 install:
     - "pip install -r requirements.txt"
