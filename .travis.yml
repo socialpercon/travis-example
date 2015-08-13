@@ -2,7 +2,7 @@ language: java
 jdk:
   - oraclejdk7
 after_success:
-  - ls -la ./target
+  - tree
 
 language: python
 python:
