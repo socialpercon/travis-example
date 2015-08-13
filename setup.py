@@ -8,10 +8,6 @@ VERSION = (0, 0, 1)
 __version__ = VERSION
 __versionstr__ = '.'.join(map(str, VERSION))
 
-install_requires = [
-    'elasticsearch>=1.0.0, <2.0',
-    'thrift>=0.9.0, <1.0',
-]
 tests_require = [
     'nose',
     'coverage'
