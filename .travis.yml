@@ -11,7 +11,7 @@ before_install:
     - sudo apt-get install python-nose
 
 after_install:
-    - echo "after_install : " && tree
+    - "echo 'after_install' :  && tree"
 
 install:
     - "pip install -r requirements.txt"
