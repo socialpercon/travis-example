@@ -1,5 +1,6 @@
 #!/bin/bash
 pwd
+ps -ef | grep mysql
 mvn test
 nosetests
 pwd

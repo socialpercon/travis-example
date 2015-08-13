@@ -15,9 +15,11 @@ install:
 
 jdk:
   - oraclejdk8
+  - oraclejdk7
 
 python:
     - "2.7"
+    - "2.8"
 
 after_success:
   - tree
