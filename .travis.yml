@@ -38,3 +38,9 @@ matrix:
         - jdk: oraclejdk7
           env: FOO=bar BAR=foo
 
+notifications:
+    email:
+        recipients:
+            - cwczip742@naver.com
+        on_success: always
+        on_failure: always
