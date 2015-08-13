@@ -45,13 +45,11 @@ notifications:
         on_success: always
         on_failure: always
 
-# blacklist
 branches:
     except:
         - experimental
         - try-yourself
 
-# whitelist
 branches:
     only:
         - master
