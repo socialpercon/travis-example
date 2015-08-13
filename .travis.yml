@@ -1,21 +1,25 @@
-before_install:
-    - sudo apt-get install -qq tree
-
-language: java
-jdk:
-  - oraclejdk7
-after_success:
-  - tree
-
-language: python
-python:
-    - "2.7"
-
-install:
-    - "pip install -r requirements.txt"
-
-script: ./scripts/run-tests.sh
+language:
+    - java
+    - python
 
 addons:
   hosts:
     - travis.example
+
+before_install:
+    - sudo apt-get install -qq tree
+
+install:
+    - "pip install -r requirements.txt"
+
+jdk:
+  - oraclejdk7
+
+python:
+    - "2.7"
+
+after_success:
+  - tree
+
+script: ./scripts/run-tests.sh
+
