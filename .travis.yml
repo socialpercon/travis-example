@@ -9,6 +9,7 @@ addons:
 before_install:
     - sudo apt-get install -qq tree
     - sudo apt-get install python-nose
+    - mysql -e 'create database myapp_test;'
 
 after_install:
     - "echo 'after_install' :  && tree"
@@ -53,3 +54,9 @@ branches:
 branches:
     only:
         - master
+
+mysql:
+    adapter: mysql2
+    database: myapp_test
+    username: root
+    encoding: utf8
