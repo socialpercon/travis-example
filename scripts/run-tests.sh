@@ -5,6 +5,8 @@ ps -ef | grep mysql
 mvn test
 nosetests
 pwd
+free
+cat /proc/cpuinfo
 python ./scripts/test.py
 
 

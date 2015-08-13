@@ -1,2 +1,2 @@
 __author__ = 'social'
-exit(1)
+exit(0)
