@@ -14,7 +14,7 @@ python:
 install:
     - "pip install -r requirements.txt"
 
-script: nosetests
+script: ./scripts/run-tests.sh
 
 addons:
   hosts:
