@@ -1,3 +1,6 @@
+before_install:
+    - sudo apt-get install -qq tree
+
 language: java
 jdk:
   - oraclejdk7
